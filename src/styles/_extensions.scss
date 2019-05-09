@@ -1,0 +1,9 @@
+// After Bootstrap has been loaded, extend it in here by modifiying
+// default classes or creating new ones.
+
+.fade-to-red {
+  @include transition(color 1s ease-out);
+  &:hover {
+    color: red;
+  }
+}

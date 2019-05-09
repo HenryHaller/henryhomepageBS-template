@@ -1,0 +1,16 @@
+// Custom.scss
+// Option B: Include parts of Bootstrap
+
+// Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// Over-write bootstrap based defaults, such as items in the $theme-colors map
+// This will effect how the default bootstrap classes get constructed
+
+// https://getbootstrap.com/docs/4.3/getting-started/theming/
+// https://github.com/twbs/bootstrap/tree/v4.3.1/scss
+
+$theme-colors: (
+  primary: green
+);
