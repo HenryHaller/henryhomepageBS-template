@@ -1,0 +1,16 @@
+//Step 1: Import basic bootstrap parameters
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+// https://getbootstrap.com/docs/4.3/getting-started/theming/
+// https://github.com/twbs/bootstrap/tree/v4.3.1/scss
+
+// Step 2: Over ride whatever bootstrap parameters we want.
+@import "overrides/index";
+
+// Step 3: Build Bootstrap with new parameters
+@import "~bootstrap/scss/bootstrap";
+
+// Step 4: Make classes extending bootstrap using scss.
+@import "./extensions/index";

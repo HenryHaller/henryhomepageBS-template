@@ -1,0 +1,6 @@
+.fade-to-red {
+  @include transition(color 1s ease-out);
+  &:hover {
+    color: red;
+  }
+}
