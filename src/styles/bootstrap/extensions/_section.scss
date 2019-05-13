@@ -1,0 +1,10 @@
+section.home {
+  min-height: #{$view-able-height};
+}
+
+section.flex-centered {
+  @extend .d-flex, .justify-content-center, .align-items-center;
+}
+
+section {
+}

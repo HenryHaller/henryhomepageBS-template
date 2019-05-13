@@ -1,10 +1,11 @@
-const path = require("path");
+const path = require('path')
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: './src/index.js',
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist')
+    // publicPath: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -12,25 +13,28 @@ module.exports = {
         test: /\.(scss)$/,
         use: [
           {
-            loader: "style-loader" // inject CSS to page
+            loader: 'style-loader' // inject CSS to page
           },
           {
-            loader: "css-loader" // translates CSS into CommonJS modules
+            loader: 'css-loader' // translates CSS into CommonJS modules
           },
           {
-            loader: "postcss-loader", // Run postcss actions
+            loader: 'postcss-loader', // Run postcss actions
             options: {
               plugins: function() {
                 // postcss plugins, can be exported to postcss.config.js
-                return [require("autoprefixer")];
+                return [require('autoprefixer')]
               }
             }
           },
           {
-            loader: "sass-loader" // compiles Sass to CSS
+            loader: 'sass-loader' // compiles Sass to CSS
           }
         ]
       }
     ]
+  },
+  devServer: {
+    contentBase: 'dist/'
   }
-};
+}

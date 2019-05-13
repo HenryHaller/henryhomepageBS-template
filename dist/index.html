@@ -4,13 +4,19 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <title>Example Bootstrap Theming!</title>
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Henry Haller</title>
   </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+  <body id="home">
+    <header style="z-index: 10">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Web Developer</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -24,14 +30,27 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rsshub">Portfolio</a>
+            </li>
+            <!-- <li class="nav-item"><a href="#connect" class="nav-link">Connect</a></li> -->
+            <li class="nav-item ml-lg-3">
+              <a href="https://www.linkedin.com/in/henry-haller" class="mr-4"
+                ><i class="btn btn-info fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/HenryHaller" class=""><i class="btn btn-info fab fa-github"></i></a>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -41,27 +60,209 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown
+                Connect
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="https://www.linkedin.com/in/henry-haller">LinkedIn</a>
+                <a class="dropdown-item" href="https://github.com/HenryHaller">GitHub</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            </li> -->
           </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="home flex-centered text-center text-light">
+        <div class="container px-0">
+          <div class="mb-5">
+            <h1>
+              Henry Haller
+            </h1>
+            <p>A <b>detail-driven</b> developer making amazing web apps.</p>
+          </div>
+          <div>
+            <a href="#about" class="btn btn-primary mr-4">About</a>
+            <a href="https://www.linkedin.com/in/henry-haller" rel="noopener" class="btn btn-success">Connect</a>
+          </div>
+        </div>
+      </section>
+      <section class="text-center flex-centered mb-5" id="about">
+        <div class="w-100 content-area">
+          <div>
+            <h3>Hi, I'm Henry. Thanks for checking out my site.</h3>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="offset-sm-1 col-sm-10 offset-md-2 col-md-8 offset-lg-3 col-lg-6">
+                <p class="lead">
+                  Web development is the most interesting type of programming for me because it is the fastest way to
+                  write software that can be available to <em>anyone</em>.
+                </p>
+                <p class="lead">
+                  Not just any software, web platforms can access more information than ever before possible. In fact
+                  web platforms can actively affect the world for us based on our desires.
+                </p>
+                <p class="lead">
+                  The right web platform could do almost anything for you that you could do online yourself. It could
+                  connect you with information from a top expert anywhere in the world, or help you meet someone who
+                  will change your life.
+                </p>
+                <p class="lead">
+                  There are so many smart things that technology can do for us. A personal computer is almost like
+                  having a second brain that's thinking for us. I want to make this second brain as smart as possible.
+                </p>
+                <p class="lead">
+                  This is why I've studied several aspects of web developement from hosted databases to front-end. I've
+                  created and consumed my own <a href="https://rsshub.online" class="">API</a>. I'm a versatile
+                  programmer of serveral Python, Ruby and JavaScript frameworks.
+                </p>
+              </div>
+              <!--Row-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center flex-centered my-5" id="skills">
+        <div class="w-100 content-area">
+          <h3>
+            Beloved Technologies
+          </h3>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 skills-group" id="backend">
+                <div>
+                  <h4 class="m-0">
+                    Backend
+                  </h4>
+                </div>
+                <ul>
+                  <li>
+                    <img src="assets/img/tech/postgres.png" alt="" />
+                    PostgreSQL
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/rails.png" alt="" />
+                    Ruby on Rails
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/flask.png" alt="" />
+                    Flask
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/django.png" alt="" />
+                    Django
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/node.png" alt="" />
+                    Node
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 skills-group" id="frontend">
+                <h4>
+                  Frontend
+                </h4>
+                <ul>
+                  <li>
+                    <img src="assets/img/tech/html5.png" alt="" />
+                    HTML5
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/css.png" alt="" />
+                    CSS3
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/vue.png" alt="" />
+                    Vue
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/react.png" alt="" />
+                    React
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/es6.png" alt="" />
+                    JavaScript ES6
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/bootstrap.svg" alt="" />
+                    Bootstrap
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 skills-group" id="devops">
+                <h4>
+                  DevOps
+                </h4>
+                <ul>
+                  <li>
+                    <img src="assets/img/tech/linux.png" alt="" />
+                    Unix Command Line
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/ansible.png" alt="" />
+                    Ansible
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/docker.png" alt="" />
+                    Docker
+                  </li>
+                  <li>
+                    <img src="assets/img/tech/git.png" alt="" />
+                    Git
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-center flex-centered mb-5" id="rsshub">
+        <div class="w-100 content-area">
+          <h3><a href="https://rsshub.online">RSSHub</a></h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 d-flex flex-column justify-content-center">
+                <p class="lead">
+                  I love to listen to podcasts but I hate having to stream them from Patreon, Soundcloud or disparate
+                  websites. I prefer a download option in order to avoid using mobile data. Solution: a custom RSS Feed
+                  Aggregator called RSSHub.
+                </p>
+              </div>
+              <div class="col-sm-6">
+                <div class="skills-group">
+                  <div>
+                    <h4>
+                      Tech
+                    </h4>
+                  </div>
+                  <ul>
+                    <li>
+                      <img src="assets/img/tech/rails.png" alt="" />
+
+                      Rails
+                    </li>
+                    <li>
+                      <img src="assets/img/tech/vue.png" alt="" />
+
+                      Vue
+                    </li>
+                    <li>
+                      <img src="assets/img/tech/css.png" alt="" />
+
+                      CSS3
+                    </li>
+                    <li>
+                      <img src="assets/img/tech/html5.png" alt="" />
+                      HTML5
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
     <script src="bundle.js"></script>
   </body>
