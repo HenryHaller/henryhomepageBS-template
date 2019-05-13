@@ -1,10 +1,12 @@
 section {
-  @extend .p-4;
+  @extend .p-1, .p-sm-2, .p-md-3, .p-lg-4;
+  @extend .mx-1, .mx-sm-2, .mx-md-3, .mx-lg-4;
   background-color: #feedd8;
   color: #3c415e;
 }
 
 section#henry {
+  @extend .mx-0;
   background-image: linear-gradient(-225deg, rgba(0, 101, 168, 0.6) 0%, rgba(0, 36, 61, 0.6) 50%),
     url('https://images.unsplash.com/photo-1554558424-4a02a6451c4b?auto=format&h=1920&q=50');
   background-position: center;
@@ -14,9 +16,10 @@ section#henry {
   @extend .align-items-center, .d-flex;
 }
 
+section#skills {
+  @extend .my-5;
+}
+
 section#about {
-  p {
-    text-indent: 1.5rem;
-    @extend .text-justify;
-  }
+  @extend .mt-5;
 }
