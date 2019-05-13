@@ -1,7 +1,22 @@
-section.home {
+section {
+  @extend .p-4;
+  background-color: #feedd8;
+  color: #3c415e;
+}
+
+section#henry {
   background-image: linear-gradient(-225deg, rgba(0, 101, 168, 0.6) 0%, rgba(0, 36, 61, 0.6) 50%),
     url('https://images.unsplash.com/photo-1554558424-4a02a6451c4b?auto=format&h=1920&q=50');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: #{$view-able-height};
+  @extend .align-items-center, .d-flex;
+}
+
+section#about {
+  p {
+    text-indent: 1.5rem;
+    @extend .text-justify;
+  }
 }
