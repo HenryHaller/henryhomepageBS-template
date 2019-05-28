@@ -14,6 +14,14 @@ section#henry {
   background-size: cover;
   min-height: #{$view-able-height};
   @extend .align-items-center, .d-flex;
+  #namebox {
+    opacity: 0;
+    animation: fade-in-right ease 0.4s forwards;
+  }
+  #contactbox {
+    opacity: 0;
+    animation: fade-in-right ease 1s 0.4s forwards;
+  }
 }
 
 section#skills {

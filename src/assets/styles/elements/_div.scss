@@ -7,7 +7,7 @@ div.skills-group {
   ul {
     padding-inline-start: 0;
     @extend .d-flex, .flex-wrap;
-    @extend .justify-content-lg-center;
+    @extend .justify-content-center;
   }
   li {
     box-shadow: 0.3rem 0.3rem 10px 0px black;
@@ -32,7 +32,8 @@ div.skills-group {
 }
 
 #frontend {
-  background-color: #d8fafe;
+  background-color: #b1cdb4;
+  @extend .my-4;
 }
 
 #devops {

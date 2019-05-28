@@ -1,2 +1,1 @@
-import 'bootstrap'
-import './styles/application.scss'
+import './assets/styles/application.scss';
