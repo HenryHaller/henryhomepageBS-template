@@ -1,0 +1,9 @@
+section {
+	@extend .p-1, .p-sm-2, .p-md-3, .p-lg-4;
+	@extend .mx-1, .mx-sm-2, .mx-md-3, .mx-lg-4;
+	@extend .text-center;
+	// background-color: #feedd8;
+	color: #3c415e;
+	min-height: calc(50vh);
+	@extend .d-flex, .flex-column, .justify-content-center;
+}

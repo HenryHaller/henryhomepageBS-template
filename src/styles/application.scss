@@ -4,5 +4,6 @@ $view-able-height: calc(100vh - #{$navbar-padding-y} * 2 - 2.5rem);
 
 @import 'animations';
 @import 'elements/index';
+@import 'components/index';
 
-@import url('https://fonts.googleapis.com/css?family=Rubik|Anonymous+Pro');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Questrial&display=swap');

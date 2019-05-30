@@ -1,0 +1,65 @@
+div.skills-group {
+	@extend .p-2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 2rem 1fr;
+	place-items: center center;
+	ul {
+		padding-inline-start: 0;
+		@extend .d-flex, .flex-wrap;
+		@extend .justify-content-center;
+	}
+	li {
+		font-family: 'Questrial', sans-serif;
+		box-shadow: 0.3rem 0.3rem 10px 0px black;
+		@include media-breakpoint-down(xs) {
+			width: 100%;
+		}
+		@extend .rounded;
+		@extend .list-group-item, .m-3;
+		@extend .d-sm-flex, .justify-content-center, .align-items-center, .flex-column;
+		img {
+			width: 1.75rem;
+			@extend .my-sm-2;
+			@extend .mr-3, .mr-sm-0;
+		}
+	}
+
+	@include media-breakpoint-up (sm) {
+		li:hover {
+			animation: soft-bounce 1s cubic-bezier(.47, .3, .73, .55) infinite;
+			// https://cubic-bezier.com/#.47,.3,.73,.55
+		}
+	}
+}
+
+@keyframes soft-bounce {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-5px);
+	}
+	50% {
+		transform: translateY(0);
+	}
+	75% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+#backend {
+	background-color: #f38e8c;
+}
+
+#frontend {
+	background-color: #b1cdb4;
+	@extend .my-4;
+}
+
+#devops {
+	background-color: #7798d8;
+}
