@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!--Font Awesome-->
-  <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-  crossorigin="anonymous"
-  />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <title>Henry Haller</title>
 </head>
-<body id="home">
+
+<body class="" id="home">
   <main>
-    <section class="text-light" id="splash">
-      ${require('./partials/index/splash.html')}
-    </section>
-    <section class="my-5" id="about">
-      ${require('./partials/index/about.html')}
-    </section>
-    <section class="my-5" id="skills">
-      ${require('./partials/index/skills.html')}
-    </section>
-    <section class="mb-5" id="rsshub">
-      ${require('./partials/index/portfolio.html')}
-    </section>
+    <div id="splash">
+    </div>
+    <div class="text-light text-center" id="articles">
+      <article class="d-flex" style="height: 97vh;">
+        <section class="" id="splash-slide">
+          ${require('./partials/index/splash.html')}
+        </section>
+      </article>
+      <article>
+        <section class="d-flex flex-column justify-content-center mt-5 shaded" id="skills">
+          ${require('./partials/index/skills.html')}
+        </section>
+      </article>
+    </div>
   </main>
-  <footer style="z-index: 10">
+  <!-- <footer style="z-index: 10">
     ${require('./partials/index/navbar.html')}
   </footer>
-  <script src="bundle.js"></script>
+   <script src="bundle.js"></script> -->
 </body>
+
 </html>

@@ -1,0 +1,43 @@
+// make btn-link have a styling thing
+.btn-link:before {
+	content: "";
+	position: absolute;
+	top: 60%;
+	right: -4px;
+	width: 5px;
+	height: 0;
+	border-width: 0 7px 7px;
+	border-style: solid;
+	border-color: transparent #fff;
+	margin-top: -4px;
+	background: transparent;
+	/* css3 */
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	transition: transform 1s ease;
+}
+
+.btn-link:after {
+	content: "";
+	position: absolute;
+	top: 60%;
+	right: -1px;
+	width: 8px;
+	height: 10px;
+	border: 3px solid #fff;
+	border-width: 0 3px 3px 0;
+	margin-top: -6px;
+	background: transparent;
+	transition: transform 1s ease;
+}
+
+.expanded:before {
+	transform: rotate(-135deg) !important;
+}
+
+.expanded:after {
+	transform: rotate(-90deg) !important;
+}

@@ -4,3 +4,13 @@ p.formatted {
 	@extend .text-justify;
 	@extend .mb-0;
 }
+
+#webdevbox {
+	p {
+		@include font-size(2rem);
+	}
+}
+
+p {
+	@extend .mb-0;
+}

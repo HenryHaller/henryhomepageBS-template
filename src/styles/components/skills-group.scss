@@ -11,11 +11,11 @@ div.skills-group {
 	}
 	li {
 		font-family: 'Questrial', sans-serif;
-		box-shadow: 0.3rem 0.3rem 10px 0px black;
+		color: black;
 		@include media-breakpoint-down(xs) {
 			width: 100%;
 		}
-		@extend .rounded;
+		@extend .rounded-pill;
 		@extend .list-group-item, .m-3;
 		@extend .d-sm-flex, .justify-content-center, .align-items-center, .flex-column;
 		img {
@@ -27,7 +27,11 @@ div.skills-group {
 
 	@include media-breakpoint-up (sm) {
 		li:hover {
-			animation: soft-bounce 1s cubic-bezier(.47, .3, .73, .55) infinite;
+			background-color: lightblue;
+			box-shadow: 0.3rem 0.3rem 10px 0px black;
+			// transition: background-color 0.9s ease;
+			// transition: box-shadow 0.4s linear;
+			// animation: soft-bounce 1s cubic-bezier(.47, .3, .73, .55) infinite;
 			// https://cubic-bezier.com/#.47,.3,.73,.55
 		}
 	}
@@ -52,14 +56,14 @@ div.skills-group {
 }
 
 #backend {
-	background-color: #f38e8c;
+	// background-color: #f38e8c;
 }
 
 #frontend {
-	background-color: #b1cdb4;
+	// background-color: #b1cdb4;
 	@extend .my-4;
 }
 
 #devops {
-	background-color: #7798d8;
+	// background-color: #7798d8;
 }

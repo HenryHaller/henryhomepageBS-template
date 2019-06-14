@@ -1,41 +1,16 @@
-<h3><a href="https://rsshub.online">RSSHub</a></h3>
-<div class="container">
-  <div class="row">
-    <div class="col-sm-6 d-flex flex-column justify-content-center">
-      <p class="formatted">
-        I love to listen to podcasts but I hate having to stream them from Patreon, Soundcloud or disparate
-        websites. I prefer a download option in order to avoid using mobile data. Solution: a custom RSS Feed
-        Aggregator called RSSHub.
-      </p>
-    </div>
-    <div class="col-sm-6">
-      <div class="skills-group">
-        <div>
-          <h4>
-            Tech
-          </h4>
-        </div>
-        <ul>
-          <li>
-            <img src="assets/img/tech/rails.png" alt="" />
-            Rails
-          </li>
-          <li>
-            <img src="assets/img/tech/vue.png" alt="" />
-
-            Vue
-          </li>
-          <li>
-            <img src="assets/img/tech/css.png" alt="" />
-
-            CSS3
-          </li>
-          <li>
-            <img src="assets/img/tech/html5.png" alt="" />
-            HTML5
-          </li>
-        </ul>
-      </div>
+<div class="accordion">
+  <h3>
+    <button class="btn btn-link" type="button" id="PortfolioController" data-toggle="collapse"
+      data-target="#PortfolioCollapse" role="button" aria-expanded="false" aria-controls="PortfolioCollapse">
+      Portfolio
+    </button>
+  </h3>
+  <div class="collapse" id="PortfolioCollapse">
+    <div>
+      ${require('./subPortfolio/rsshub.html')}
     </div>
   </div>
 </div>
+
+<!-- 
+<h3><a href="https://rsshub.online">RSSHub</a></h3> -->

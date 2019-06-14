@@ -1,5 +1,6 @@
 const path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: {
@@ -11,6 +12,12 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist')
 		// publicPath: path.resolve(__dirname, 'dist')
 	},
+	plugins: [
+		new webpack.ProvidePlugin({
+			$: 'jquery',
+			Popper: [ 'popper.js', 'default' ]
+		})
+	],
 	module: {
 		rules: [
 			{

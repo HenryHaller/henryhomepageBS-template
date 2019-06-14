@@ -1,5 +1,13 @@
 a:hover {
-  text-decoration: none;
-  font-weight: bold;
-  color: darkgreen;
+	text-decoration: none;
+	font-weight: bold;
+	color: darkgreen;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a {
+	@extend .text-light;
 }

@@ -1,17 +1,29 @@
-section#splash {
-	@extend .mx-0;
+#splash {
+	@extend .mx-0, .w-100;
+	height: 100vh;
 	background-image: linear-gradient(-225deg, rgba(0, 101, 168, 0.6) 0%, rgba(0, 36, 61, 0.6) 50%),
 		url('https://images.unsplash.com/photo-1554558424-4a02a6451c4b?auto=format&h=1920&q=50');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: #{$view-able-height};
-	#namebox {
-		opacity: 0;
-		animation: fade-in-right ease 0.4s forwards;
-	}
-	#contactbox {
-		opacity: 0;
-		animation: fade-in-right ease 1s 0.4s forwards;
-	}
+	z-index: -3;
+	position: fixed;
+	top: 0;
+}
+
+#splash-slide {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: .8fr 1fr;
+}
+#namebox {
+	opacity: 0;
+	animation: fade-in-right ease 0.4s forwards;
+	place-self: end center;
+	position: relative;
+	bottom: 5vh;
+}
+#webdevbox {
+	place-self: center center;
 }
