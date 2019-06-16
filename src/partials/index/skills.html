@@ -1,6 +1,6 @@
 <div id="accordion">
   <div id="skills">
-    <h3 style="margin-bottom: 0">
+    <h3>
       <button class="btn btn-link" type="button" id="skillsTitle" data-toggle="collapse" data-target="#skillsCollapse"
         role="button" aria-expanded="false" aria-controls="skillsCollapse">
         Skills
@@ -109,16 +109,14 @@
         </div>
       </div>
     </div>
-    <h3>
-      <button class="btn btn-link" type="button" id="PortfolioController" data-toggle="collapse"
-        data-target="#PortfolioCollapse" role="button" aria-expanded="false" aria-controls="PortfolioCollapse">
-        Portfolio
-      </button>
-    </h3>
-    <div class="collapse" id="PortfolioCollapse" data-parent="#accordion">
-      <div>
-        ${require('./subPortfolio/rsshub.html')}
-      </div>
-    </div>
+  </div>
+  <h3>
+    <button class="btn btn-link" type="button" id="PortfolioController" data-toggle="collapse"
+      data-target="#PortfolioCollapse" role="button" aria-expanded="false" aria-controls="PortfolioCollapse">
+      Portfolio
+    </button>
+  </h3>
+  <div class="collapse" id="PortfolioCollapse" data-parent="#accordion">
+    ${require('./subPortfolio/rsshub.html')}
   </div>
 </div>

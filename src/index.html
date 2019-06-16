@@ -13,25 +13,24 @@
 
 <body class="" id="home">
   <main>
-    <div id="splash">
+    <div class="z--1">
+      <div class="full-sized-background unsplash-background-source"></div>
     </div>
-    <div class="text-light text-center" id="articles">
-      <article class="d-flex" style="height: 97vh;">
-        <section class="" id="splash-slide">
-          ${require('./partials/index/splash.html')}
-        </section>
-      </article>
-      <article>
-        <section class="d-flex flex-column justify-content-center mt-5 shaded" id="skills">
-          ${require('./partials/index/skills.html')}
-        </section>
-      </article>
+    <div class="position-absolute w-100">
+      <section class="d-flex flex-column justify-content-center shaded" id="skills">
+        ${require('./partials/index/skills.html')}
+      </section>
+    </div>
+    <div class="z-2 position-absolute w-100" style="pointer-events: none;">
+      <div class="social-media-plane">
+        <div class="social-media-container bg-dark">
+          <div class="social-media-vector">
+            ${require('./partials/social_media_connections.html')}
+          </div>
+        </div>
+      </div>
     </div>
   </main>
-  <!-- <footer style="z-index: 10">
-    ${require('./partials/index/navbar.html')}
-  </footer>
-   <script src="bundle.js"></script> -->
 </body>
 
 </html>
