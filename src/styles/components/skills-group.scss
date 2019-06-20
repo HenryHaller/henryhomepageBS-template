@@ -1,4 +1,5 @@
 div.skills-group {
+	@extend .mx-2;
 	@extend .p-2;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -8,6 +9,7 @@ div.skills-group {
 		padding-inline-start: 0;
 		@extend .d-flex, .flex-wrap;
 		@extend .justify-content-center;
+		@extend .my-2;
 	}
 	li {
 		font-family: 'Questrial', sans-serif;
@@ -16,7 +18,7 @@ div.skills-group {
 			width: 100%;
 		}
 		@extend .rounded-pill;
-		@extend .list-group-item, .m-3;
+		@extend .list-group-item, .my-2, .mx-3;
 		@extend .d-sm-flex, .justify-content-center, .align-items-center, .flex-column;
 		img {
 			width: 1.75rem;

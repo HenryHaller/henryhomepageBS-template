@@ -1,5 +1,5 @@
 // make btn-link have a styling thing
-.btn-link:before {
+%expandable:before {
 	content: "";
 	position: absolute;
 	top: 60%;
@@ -20,7 +20,7 @@
 	transition: transform 1s ease;
 }
 
-.btn-link:after {
+%expandable:after {
 	content: "";
 	position: absolute;
 	top: 60%;
