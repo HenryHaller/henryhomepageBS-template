@@ -1,9 +1,5 @@
 section {
 	@extend .p-1, .p-sm-2, .p-md-3, .p-lg-4;
-	@extend .mx-1, .mx-sm-2, .mx-md-3, .mx-lg-4;
 	// background-color: #feedd8;
 	// @extend .d-flex, .flex-column, .justify-content-center;
-}
-section.shaded {
-	background-color: rgba(27, 35, 45, 0.89);
 }

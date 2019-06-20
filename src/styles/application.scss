@@ -43,8 +43,6 @@ $view-able-height: calc(100vh - #{$navbar-padding-y} * 2 - 2.5rem);
 
 .social-media-plane {
 	position: fixed;
-	// top: 0;
-	// left: 0;
 	bottom: 0;
 	height: calc(100vh - 65px);
 	width: 100vw;
@@ -62,8 +60,6 @@ $view-able-height: calc(100vh - #{$navbar-padding-y} * 2 - 2.5rem);
 }
 
 .social-media-vector {
-	// display: flex;
-	// justify-content: flex-end;
 	margin: 0 auto;
 	width: 10rem;
 	display: flex;
@@ -76,4 +72,46 @@ $view-able-height: calc(100vh - #{$navbar-padding-y} * 2 - 2.5rem);
 	}
 	.social-media-container {
 	}
+}
+
+.primary-section-height {
+	height: calc(100vh - 60px);
+}
+
+.title-basis {
+	@include media-breakpoint-up(sm) {
+		flex-basis: 45%;
+	}
+	@include media-breakpoint-up(md) {
+		flex-basis: 50%;
+	}
+}
+
+.title {
+	@include media-breakpoint-up(sm) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.small-scroll {
+	@include media-breakpoint-down(xs) {
+		overflow: scroll;
+	}
+}
+
+.skills {
+	justify-content: center;
+	display: flex;
+	flex-basis: 50%;
+	text-align: center;
+	background-image: linear-gradient(#00000036, #000000a8);
+}
+
+$text-color: white;
+
+button,
+body {
+	color: $text-color !important;
 }

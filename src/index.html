@@ -12,25 +12,27 @@
 </head>
 
 <body class="" id="home">
-  <main>
-    <div class="z--1">
-      <div class="full-sized-background unsplash-background-source"></div>
-    </div>
-    <div class="position-absolute w-100">
-      <section class="d-flex flex-column justify-content-center shaded" id="skills">
-        ${require('./partials/index/skills.html')}
-      </section>
-    </div>
-    <div class="z-2 position-absolute w-100" style="pointer-events: none;">
-      <div class="social-media-plane">
-        <div class="social-media-container bg-dark">
-          <div class="social-media-vector">
-            ${require('./partials/social_media_connections.html')}
-          </div>
+  <div class="z--1">
+    <div class="full-sized-background unsplash-background-source"></div>
+  </div>
+  <main class="position-absolute w-100 primary-section-height d-flex flex-column small-scroll">
+    <section class="title-basis title text-center mt-5 mt-sm-0">
+      ${require('./partials/title.html')}
+    </section>
+    <section id="skills" class="skills">
+      ${require('./partials/index/skills.html')}
+    </section>
+  </main>
+  <div class="z-2 position-absolute w-100" style="pointer-events: none;">
+    <div class="social-media-plane">
+      <div class="social-media-container border-top bg-dark">
+        <div class="social-media-vector">
+          ${require('./partials/social_media_connections.html')}
         </div>
       </div>
     </div>
-  </main>
+  </div>
+
 </body>
 
 </html>

@@ -1,5 +1,4 @@
 .btn-link {
-	@extend .text-light;
 	text-decoration: none !important;
 	@include font-size(1.75rem);
 	display: inline-block;
