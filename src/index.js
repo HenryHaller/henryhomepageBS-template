@@ -1,5 +1,7 @@
 import 'bootstrap';
 import './styles/application.scss';
+// import '../assets/img/tech/ruby.png';
+// import '../assets/img/tech/es6.png';
 
 // const toggleExpansion = (event) => {
 // 	if ('#' + event.target.id !== event.data.collapse.collapse) {

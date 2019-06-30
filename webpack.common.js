@@ -1,5 +1,4 @@
 const path = require('path');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -35,7 +34,7 @@ module.exports = {
 					loader: 'file-loader',
 					options: {
 						name: '[name].[hash].[ext]',
-						outputPath: 'imgs'
+						outputPath: '/assets/img/tech/'
 					}
 				}
 			}

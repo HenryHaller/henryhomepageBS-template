@@ -6,6 +6,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+// import CopyPlugin from 'copy-webpack-plugin';
 
 module.exports = merge(common, {
 	mode: 'production',
@@ -28,7 +30,16 @@ module.exports = merge(common, {
 			})
 		]
 	},
-	plugins: [ new MiniCssExtractPlugin({ filename: '[name].[contentHash].css' }), new CleanWebpackPlugin() ],
+	plugins: [
+		new MiniCssExtractPlugin({ filename: '[name].[contentHash].css' }),
+		new CleanWebpackPlugin(),
+		new CopyPlugin([
+			{
+				from: path.resolve(__dirname, 'assets'),
+				to: path.resolve(__dirname, 'dist')
+			}
+		])
+	],
 	module: {
 		rules: [
 			{
