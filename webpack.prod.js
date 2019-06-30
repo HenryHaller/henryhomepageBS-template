@@ -35,7 +35,7 @@ module.exports = merge(common, {
 		new CleanWebpackPlugin(),
 		new CopyPlugin([
 			{
-				from: path.resolve(__dirname, 'assets'),
+				from: path.resolve(__dirname, 'assets/'),
 				to: path.resolve(__dirname, 'dist')
 			}
 		])
