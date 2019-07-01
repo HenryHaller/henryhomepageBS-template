@@ -8,7 +8,7 @@
         </h3>
       </button>
     </div>
-    <div class="collapse show justify-content-center align-items-center flex-column" id="skillsCollapse"
+    <div class="collapse justify-content-center align-items-center flex-column" id="skillsCollapse"
       data-parent="#accordion">
       <div style="flex-grow: 1;" class="d-flex align-items-center flex-column justify-content-center">
         <div class="skills-group" id="backend">
@@ -110,7 +110,7 @@
         </div>
       </div>
     </div>
-    <div class="w-100 title-button-color rounded-pill">
+    <div class="w-100 title-button-color rounded-pill mb-1">
       <button class="btn btn-link title-button" type="button" id="PortfolioController" data-toggle="collapse"
         data-target="#PortfolioCollapse" role="button" aria-expanded="false" aria-controls="PortfolioCollapse">
         <h3>Portfolio</h3>
@@ -120,6 +120,30 @@
     <div class="collapse justify-content-center align-items-center flex-column" id="PortfolioCollapse"
       data-parent="#accordion">
       ${require('./subPortfolio/rsshub.html')}
+    </div>
+    <div class="w-100 title-button-color rounded-pill">
+      <button class="btn btn-link title-button" type="button" id="AboutController" data-toggle="collapse"
+        data-target="#AboutCollapse" role="button" aria-expanded="false" aria-controls="AboutCollapse">
+        <h3>About</h3>
+      </button>
+    </div>
+
+    <div class="collapse show justify-content-center align-items-center flex-column" id="AboutCollapse"
+      data-parent="#accordion">
+      <div class="about">
+        <p>
+          Hi, my name is Henry and I'm a web developer. I can work on any type of stack, front-end or back-end.
+        </p>
+        <p>
+          My goal is to be a developer who under-promises and over-delivers.
+        </p>
+        <p>
+          My other hobbies are playing Magic The Gathering and biking.
+        </p>
+        <p>
+          Thanks for visiting!
+        </p>
+      </div>
     </div>
   </div>
 </div>
