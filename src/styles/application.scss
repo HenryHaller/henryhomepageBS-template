@@ -137,6 +137,7 @@ button h4 {
 // }
 
 div.about {
+	text-align: right;
 	p {
 		@include font-size(1.5rem);
 	}
