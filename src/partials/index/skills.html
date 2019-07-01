@@ -1,13 +1,21 @@
 <div id="skills" class="d-flex flex-column py-2" style="flex-grow: 1; margin:0 10vw;">
   <div id="accordion" class="d-flex flex-column" style="flex-grow: 1;">
-    <div class="w-100 title-button-color rounded-pill mb-1">
-      <button class="btn btn-link" type="button" id="skillsTitle" data-toggle="collapse" data-target="#skillsCollapse"
-        role="button" aria-expanded="false" aria-controls="skillsCollapse">
+    <button class="w-100 title-button-color rounded-pill btn btn-link title-button" type="button" id="skillsTitle"
+      data-toggle="collapse" data-target="#skillsCollapse" role="button" aria-expanded="false"
+      aria-controls="skillsCollapse">
+      <div class="w-100">
         <h3>
           Skills
         </h3>
-      </button>
-    </div>
+      </div>
+      <div class="d-inline ">
+        <div style="position: relative; bottom:0.7rem;">
+          <div class="navigation-arrows">
+
+          </div>
+        </div>
+      </div>
+    </button>
     <div class="collapse justify-content-center align-items-center flex-column" id="skillsCollapse"
       data-parent="#accordion">
       <div style="flex-grow: 1;" class="d-flex align-items-center flex-column justify-content-center">
@@ -110,23 +118,42 @@
         </div>
       </div>
     </div>
-    <div class="w-100 title-button-color rounded-pill mb-1">
-      <button class="btn btn-link title-button" type="button" id="PortfolioController" data-toggle="collapse"
-        data-target="#PortfolioCollapse" role="button" aria-expanded="false" aria-controls="PortfolioCollapse">
-        <h3>Portfolio</h3>
-      </button>
-    </div>
+    <button class="w-100 title-button-color rounded-pill btn btn-link title-button" type="button"
+      id="PortfolioController" data-toggle="collapse" data-target="#PortfolioCollapse" role="button"
+      aria-expanded="false" aria-controls="PortfolioCollapse">
+      <div class="w-100">
+        <h3>Portfolio
+        </h3>
+      </div>
+      <div class="d-inline ">
+        <div style="position: relative; bottom:0.7rem;">
+          <div class="navigation-arrows">
+
+          </div>
+        </div>
+      </div>
+    </button>
 
     <div class="collapse justify-content-center align-items-center flex-column" id="PortfolioCollapse"
       data-parent="#accordion">
       ${require('./subPortfolio/rsshub.html')}
     </div>
-    <div class="w-100 title-button-color rounded-pill">
-      <button class="btn btn-link title-button" type="button" id="AboutController" data-toggle="collapse"
-        data-target="#AboutCollapse" role="button" aria-expanded="false" aria-controls="AboutCollapse">
-        <h3>About</h3>
-      </button>
-    </div>
+    <button class="w-100 title-button-color rounded-pill btn btn-link title-button" type="button" id="AboutController"
+      data-toggle="collapse" data-target="#AboutCollapse" role="button" aria-expanded="false"
+      aria-controls="AboutCollapse">
+      <div class="w-100">
+        <h3>About
+        </h3>
+        <div class="d-inline ">
+          <div style="position: relative; bottom:0.7rem;">
+            <div class="navigation-arrows expanded">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </button>
 
     <div class="collapse show justify-content-center align-items-center flex-column" id="AboutCollapse"
       data-parent="#accordion">

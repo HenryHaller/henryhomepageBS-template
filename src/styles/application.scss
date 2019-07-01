@@ -111,8 +111,7 @@ button h3 {
 
 button h3,
 button h4 {
-	@extend %expandable;
-	display: inline-block;
+	@extend .mb-0;
 }
 
 .title-button-color {
